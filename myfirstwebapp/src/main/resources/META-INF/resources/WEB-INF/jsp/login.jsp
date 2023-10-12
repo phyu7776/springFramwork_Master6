@@ -4,7 +4,12 @@
     </head>
     <body>
         Welcome to the login page!
-        </br>
-        ${name}
+
+        <pre>${isWrong}</pre>
+        <form method="post">
+            Name : <input type="text" name="name">
+            Password : <input type="password" name="password">
+            <input type="submit" submit>
+        </form>
     </body>
 </html>
