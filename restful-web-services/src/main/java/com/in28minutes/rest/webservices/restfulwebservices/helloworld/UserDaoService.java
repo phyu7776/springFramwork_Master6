@@ -23,9 +23,10 @@ public class UserDaoService {
         return users;
     }
 
-    public void save(User user) {
+    public User save(User user) {
         user.setId(++usersCnt);
         users.add(user);
+        return user;
     }
 
     public User fildOne(int id) {
